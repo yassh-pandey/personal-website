@@ -229,6 +229,8 @@ html, body{
     top: calc( 100vh - 100px);
     right: 0.8vw;
     cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
     transition: transform 150ms ease-in
                 opacity 200 ease-in-out;
     opacity: 0;
@@ -238,7 +240,7 @@ html, body{
     opacity: 1;
 }
 .up-arrow-container:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 .up-arrow-image{
    width: 35px;
