@@ -241,7 +241,7 @@ html, body{
     opacity: 1;
 }
 .up-arrow-container:hover{
-    /* transform: scale(1.1); */
+    transform: scale(1.1);
 }
 .up-arrow-image{
    width: 35px;
