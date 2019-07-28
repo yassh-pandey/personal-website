@@ -231,6 +231,7 @@ html, body{
     cursor: pointer;
     user-select: none;
     -moz-user-select: none;
+    transform: scale(0.8);
     transition: transform 150ms ease-in
                 opacity 200 ease-in-out;
     opacity: 0;
