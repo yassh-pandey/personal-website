@@ -46,13 +46,14 @@ html, body{
     color: white;
     font-size: 27px;
     position: relative;
+    padding: 5px 5px;
 }
 .navigation-item a::after{
     position: absolute;
     content: '';
     bottom: -5px;
     left: 0px;
-    right: 0px;
+    right: -10px;
     height: 2.5px;
     background-color: white;
     transform: scaleX(0);
@@ -246,8 +247,7 @@ html, body{
     user-select: none;
     -moz-user-select: none;
     transform: scale(0.8);
-    transition: transform 150ms ease-in
-                opacity 200 ease-in-out;
+    transition: transform 200ms ease-in, opacity 300ms ease-in;
     opacity: 0;
     box-shadow: 4px 4px 4px -2px rgba(1,1,1,0.5);
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
