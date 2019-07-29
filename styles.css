@@ -239,20 +239,40 @@ html, body{
     position: relative;
     object-fit: contain;
     border-radius: 1px;
-    object-fit: cover;
+    flex-wrap: wrap;
 }
 .lol::after{
     top: 0px;
     bottom: 0px;
-    width: 80%;
+    width: 70%;
     height: 100%;
     content: '';
-    background-color: rgba(1,1,1,0.1);
+    background-color: rgba(1,1,1,0.3);
     background-blend-mode: multiply;
     position: absolute;
+    z-index: 10;
 }
-video{
+.lol-title{
+    z-index: 20;
+    flex-basis: 70%;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 3px rgba(1,1,1,0.6);
+    background: #373e47;
+    font-family: 'DM Serif Display', serif;
+    text-decoration: none;
+}
+.lol video{
     object-fit: cover;
+    flex-basis: auto;
+}
+.lol-grid{
+    flex: 1 1 100%;
+    display: grid;
+    grid-template: 1000px / repeat(1, 100px);
 }
 .up-arrow-container{
     padding: 10px;
@@ -350,7 +370,7 @@ video{
     .navigation-item{
         padding: 10px;
         margin: 0px;
-        transform: translate(-40px);
+        transform: translate(-15px);
     }
     .navigation-item a{
         font-size: 23px;
