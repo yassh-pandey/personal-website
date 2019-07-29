@@ -247,7 +247,7 @@ html, body{
     width: 70%;
     height: 100%;
     content: '';
-    background-color: rgba(1,1,1,0.3);
+    background-color: rgba(1,1,1,0.2);
     background-blend-mode: multiply;
     position: absolute;
     z-index: 10;
