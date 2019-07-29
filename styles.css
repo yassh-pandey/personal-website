@@ -232,6 +232,28 @@ html, body{
     order: 16;
 }
 
+.lol{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    position: relative;
+    object-fit: contain;
+    border-radius: 1px;
+    object-fit: cover;
+}
+.lol::after{
+    top: 0px;
+    bottom: 0px;
+    width: 80%;
+    height: 100%;
+    content: '';
+    background-color: rgba(1,1,1,0.1);
+    background-blend-mode: multiply;
+    position: absolute;
+}
+video{
+    object-fit: cover;
+}
 .up-arrow-container{
     padding: 10px;
     border: 2px solid white;
