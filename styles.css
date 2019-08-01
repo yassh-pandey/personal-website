@@ -421,11 +421,15 @@ html, body{
         height: 130px;
     }
     .lol-video-wrapper{
-        flex-basis: 100%;
+        flex-basis: 90%;
         height: 280px;
     }
     .lol-video-wrapper::after{
-        width: 100%;
+        width: 90%;
+    }
+    .lol-video-wrapper video{
+        object-fit: contain;
+        flex-basis: 100%;
     }
     .up-arrow-container{
         right: 0.4vw;
