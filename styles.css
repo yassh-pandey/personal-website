@@ -236,21 +236,7 @@ html, body{
     display: flex;
     justify-content: center;
     margin: 40px 0px;
-    position: relative;
-    object-fit: contain;
-    border-radius: 1px;
     flex-wrap: wrap;
-}
-.lol::after{
-    top: 0px;
-    bottom: 0px;
-    width: 70%;
-    height: 100%;
-    content: '';
-    background-color: rgba(1,1,1,0.2);
-    background-blend-mode: multiply;
-    position: absolute;
-    z-index: 10;
 }
 .lol-title{
     z-index: 20;
@@ -261,18 +247,48 @@ html, body{
     text-align: center;
     text-transform: capitalize;
     text-shadow: 3px 3px 3px rgba(1,1,1,0.6);
-    background: #373e47;
     font-family: 'DM Serif Display', serif;
     text-decoration: none;
 }
-.lol video{
+.lol-video-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+.lol-video-wrapper::after{
+    top: 0px;
+    bottom: 0px;
+    width: 90%;
+    height: 100%;
+    content: '';
+    background-color: rgba(1,1,1,0.15);
+    background-blend-mode: multiply;
+    position: absolute;
+    z-index: 10;
+}
+.lol-video-wrapper video{
     object-fit: cover;
-    flex-basis: auto;
+    flex-basis: 90%;
 }
 .lol-grid{
     flex-basis: 70%;
     display: grid;
     grid-template: 1fr / repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.lol-match-history-wrapper{
+   
+}
+.lol-match-history-wrapper img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.lol-explain-text{
+    background:linear-gradient(135deg, #E3E3E3 0%,#5D6874 100%);
+    border-radius: 10px;
 }
 .up-arrow-container{
     padding: 10px;
@@ -404,15 +420,12 @@ html, body{
         width: 130px;
         height: 130px;
     }
-    .lol::after{
-        width: 100%;
+    .lol-video-wrapper{
+        flex-basis: 100%;
+        height: 280px;
     }
-    .lol-title{
-        flex-basis: 100%;        
-    }
-    .lol video{
+    .lol-video-wrapper::after{
         width: 100%;
-        height: 300px;
     }
     .up-arrow-container{
         right: 0.4vw;
