@@ -425,7 +425,7 @@ html, body{
         height: 280px;
     }
     .lol-video-wrapper::after{
-        width: 90%;
+        width: 100%;
     }
     .lol-video-wrapper video{
         object-fit: contain;
