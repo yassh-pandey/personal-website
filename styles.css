@@ -425,7 +425,7 @@ html, body{
         height: 130px;
     }
     .lol-content{
-        flex-basis: calc(100% - 20px);
+        flex-basis: calc(100% - 25px);
         border-radius: 5px;
     }
     .lol-video-wrapper{
