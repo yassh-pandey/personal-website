@@ -455,7 +455,6 @@ a, a:active, a:focus{
     .navigation-item{
         padding: 10px;
         margin: 0px;
-        transform: translate(-10px);
     }
     .navigation-item a{
         font-size: 23px;
