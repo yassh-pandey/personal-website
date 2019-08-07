@@ -40,7 +40,7 @@ a, a:active, a:focus{
 }
 .navigation-item{
     padding: 10px 18px;
-    margin: 10px 10px;
+    margin: 10px 8px;
     flex-basis: auto;
 }
 .navigation-item a{
