@@ -311,13 +311,30 @@ a, a:active, a:focus{
     align-items: center;
 }
 .footer .email{
-    flex-basis: auto;
+    flex-basis: 100%;
     margin-bottom: 25px;
     color: white;
     font-size: 28px;
-    border: 1px solid white;
-    border-radius: 5px;
     padding: 25px;
+    position: relative;
+}
+.footer .email::before{
+    position: absolute;
+    content: '';
+    height: 1px;
+    background-color: white;
+    width: 100vw;
+    top: -5px;
+    left: 0px;
+}
+.footer .email::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    background-color: white;
+    width: 100vw;
+    bottom: -5px;
+    left: 0px;
 }
 .footer .email span{
     font-size: 24px;
@@ -334,6 +351,7 @@ a, a:active, a:focus{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .footer img{
     width: 50px;
