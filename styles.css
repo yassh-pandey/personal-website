@@ -446,7 +446,7 @@ a, a:active, a:focus{
 
 @media(max-width: 560px){
     .navigation-container{
-        justify-content: flex-start;
+        justify-content: center;
     }
     .science-logo{
         padding: 10px;
