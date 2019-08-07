@@ -15,7 +15,9 @@ html, body{
     overflow-x: hidden;
     /* background:linear-gradient(135deg, #46464b 0%,#212125 100%); */
 }
-
+a, a:active, a:focus{
+    outline: none;
+}
 .navigation-container{
     display: flex;
     flex-wrap: wrap;
@@ -122,6 +124,7 @@ html, body{
     text-align: left;
     margin: 25px;
     font-size: 20px;
+    word-spacing: 0.02rem;
 }
 .technology-grid-wrapper{
     display: flex;
@@ -276,10 +279,10 @@ html, body{
     grid-template: 1fr / repeat(2, 1fr);
     grid-gap: 10px;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .lol-match-history-wrapper{
-   
 }
 .lol-match-history-wrapper img{
     width: 100%;
@@ -293,6 +296,45 @@ html, body{
     font-size: 20px;
     padding: 15px;
     background:linear-gradient(135deg, #e5e7eb 0%,#c8ccd3 100%);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #363737;
+    padding: 25px 0px;
+    text-align: center;
+    align-items: center;
+}
+.footer .email{
+    flex-basis: auto;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 28px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 25px;
+}
+.footer .email span{
+    font-size: 24px;
+    font-style: italic;
+    padding-right: 10px; 
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+.logos div{
+    flex-basis: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer img{
+    width: 50px;
+    height: 50px;
 }
 .up-arrow-container{
     padding: 10px;
