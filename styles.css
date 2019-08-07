@@ -450,6 +450,7 @@ a, a:active, a:focus{
         margin: 0px;
         font-size: 26px;
         flex-basis: 100%;
+        text-align: center;
     }
     .navigation-item{
         padding: 10px;
