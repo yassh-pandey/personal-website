@@ -330,7 +330,7 @@ a, a:active, a:focus{
     flex-basis: 100%;
 }
 .logos div{
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 4);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
