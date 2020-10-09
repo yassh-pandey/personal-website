@@ -6,14 +6,11 @@
     padding: 0px;
 }
 html, body{
-    /* background-color:rgb(119,136,153);
-    background-color: #2b304b; */
     background:linear-gradient(135deg, #401010 0%,#b73030 100%);
-    /* background:linear-gradient(135deg, #656d77 0%,#2f363f 100%); */
     background:linear-gradient(135deg, #656d77 0%,#2f363f 100%);
     min-width: 375px;
     overflow-x: hidden;
-    /* background:linear-gradient(135deg, #46464b 0%,#212125 100%); */
+    scroll-behavior: smooth;
 }
 a, a:active, a:focus{
     outline: none;
